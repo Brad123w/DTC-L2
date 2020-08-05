@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <title>Grav-World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    function testing(){
+        var rand = math.floor(Math.random()*options.length);
+       document.getElementById('text').innerHTML = options[rand];
+    }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Grav-pocylise</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Grav-Gear.html">Grav-Gear</a>
+            <a href="Spin.html">Quest-Spin</a>
+
+        </nav>
+        <section>
+            <h2>Quest spin</h2>
+            <p> HERE HAVE A QUEST</p>
+            
+            <button onclick="testing()">Gib Quest</button>
+            <p id="text"></p>
+        </section>
+
+
+    </div>
+
+
+</body>
