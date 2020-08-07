@@ -4,10 +4,13 @@
     <title>Grav-World</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-    function testing(){
-        var rand = math.floor(Math.random()*options.length);
-       document.getElementById('text').innerHTML = options[rand];
-    }
+        
+        var options =['Play tenis with a bomb','bundgy jump into the sky','Create a Gavity dome','mine into the earths core (definantly safe)','commit arson','commit sodku','commit tax fraud','create Covid-20']
+        function testing() { // * Quest java button
+            var rand = Math.floor(Math.random() * options.length);
+            document.getElementById('text').innerHTML = options[rand];
+        }
+
     </script>
 </head>
 
@@ -23,7 +26,7 @@
         <section>
             <h2>Quest spin</h2>
             <p> HERE HAVE A QUEST</p>
-            
+
             <button onclick="testing()">Gib Quest</button>
             <p id="text"></p>
         </section>
